@@ -22,7 +22,7 @@ cv::Point3f operator*(cv::Mat M, const cv::Point3f& p)
   Mat rotation(3,3,cv::DataType<float>::type); // identity matrix
   Mat invrotation(3,3,cv::DataType<float>::type); // identity matrix
   Mat R;
-  Mat momentOfInertia =(Mat_<double>(3,3) <<
+  Mat momentOfInertia =(Mat_<double>(3,3) <<                 // the moment of inertia metrix (Depends on the vehicle)
                3.3670,       0,              0,
                0,       13.4012,           0,
                0,       0 ,                3.3670
